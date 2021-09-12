@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1></h1>
+    <div class="container">
+
+      <input id="result" type="text" class="result">
+
+      <div class="spaceBox">
+      </div>
+      
+      <div class="first-row">
+        <input id="bracket_open" onclick="set_value('(')" type="button" name="" value="(" class="global">
+        <input id="bracket_close" onclick="set_value(')')" type="button" name="" value=")" class="global">
+        <input id="mod" onclick="set_value('%')" type="button" name="" value="%" class="global">
+        <input id="sub" onclick="set_value('-')" type="button" name="" value="-" class="global">
+      </div>
+      <div class="second-row">
+        <input id="seven" type="button" name="" onclick="set_value('7')" value="7" class="global">
+        <input id="eight" onclick="set_value('8')" type="button" name="" value="8" class="global">
+        <input id="nine" onclick="set_value('9')" type="button" name="" value="9" class="global">
+        <input id="forwordSlash" onclick="set_value('/')" type="button" name="" value="/" class="global">
+      </div>
+      <div class="third-row">
+        <input id="four" onclick="set_value('4')" type="button" name="" value="4" class="global">
+        <input id="five" onclick="set_value('5')" type="button" name="" value="5" class="global">
+        <input id="six" onclick="set_value('6')" type="button" name="" value="6" class="global">
+        <input id="mul" onclick="set_value('*')" type="button" name="" value="X" class="global">
+      </div>
+      <div class="fourth-row">
+        <input id="one" onclick="set_value('1')" type="button" name="" value="1" class="global">
+        <input id="two" onclick="set_value('2')" type="button" name="" value="2" class="global">
+        <input id="three" onclick="set_value('3')" type="button" name="" value="3" class="global">
+        <input id="plus" onclick="set_value('+')" type="button" name="" value="+" class="global">
+        
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input id="zero" onclick="set_value('0')" type="button" name="" value="0" class="big">
+          <input id="dot" onclick="set_value('.')" type="button" name="" value="." class=" small">
+          <input id="result" onclick="equal()" type="button" name="" value="=" class=" green white-text big top-margin">
+          <input id="delete" onclick="delete_value()" type="button" name="" value="Delete" class=" red small white-text top-margin">
+        </div>
+          <input id="power" onclick="set_value()" type="button" name="" value="^" class="global">
+          <div>
+            <input id="ac" onclick="all_delete()" type="button" name="" value="AC" class="global ac">
+          </div>
+      </div>
+    </div>
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
